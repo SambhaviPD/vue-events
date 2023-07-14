@@ -1,0 +1,13 @@
+<!-- eslint-disable vue/multi-word-component-names -->
+<template>
+  <div v-if="event">
+      <p>{{ event.time }} on {{  event.date }} @ {{ event.location }}</p>
+      <p>{{ event.description }}</p>
+  </div>
+</template>
+
+<script>
+  export default {
+    props: ['event']
+  }
+</script>
